@@ -105,12 +105,6 @@ namespace txt_operations {
     }
 }
 
-// --- FIXED ---
-//TODO: Do not use exit to terminate your program, since when you do
-//the destructors for the different variables are not called. If you
-//want to end the program when an unknown operation is found use the
-//throw catch structure instead. 
-
 void operationSelector(std::vector<std::string>& text, const std::string& flag,
     const std::string& parameter)
 {
