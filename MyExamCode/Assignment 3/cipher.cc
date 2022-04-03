@@ -14,9 +14,6 @@ int main() {
         std::istreambuf_iterator<char>{}
     };
     file.close();
-    
-    std::vector<int> high{};
-    std::vector<int> low{};
 
     std::stable_partition(container.begin(), container.end(),
         [] (int n) {return n < 96;});
